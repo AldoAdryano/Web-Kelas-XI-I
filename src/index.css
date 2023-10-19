@@ -27,7 +27,8 @@ html {
 
 body {
 	background: #1e1e1e;
-	overflow-x: hidden; /* Mencegah scroll horizontal */
+	overflow-x: hidden;
+	/* Mencegah scroll horizontal */
 }
 
 /* Untuk Webkit Browsers */
@@ -74,11 +75,9 @@ body {
 	position: relative;
 	width: 100%;
 	height: auto;
-	background: radial-gradient(
-			circle,
+	background: radial-gradient(circle,
 			rgba(224, 107, 213, 0.8520658263305322) 0%,
-			rgba(75, 57, 198, 0.9052871148459384) 100%
-		),
+			rgba(75, 57, 198, 0.9052871148459384) 100%),
 		url("/Background.jpeg");
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -191,7 +190,8 @@ body {
 }
 
 #AngkaGradientBlue {
-	-webkit-text-stroke: 1px #14a6ef3f; /* Menggunakan efek outline teks dengan warna hitam */
+	-webkit-text-stroke: 1px #14a6ef3f;
+	/* Menggunakan efek outline teks dengan warna hitam */
 	background: linear-gradient(to bottom right, #96dcff, #14a6ef 55%);
 	filter: brightness(1.2);
 	-webkit-background-clip: text;
@@ -201,7 +201,8 @@ body {
 }
 
 #AngkaGradientPink {
-	-webkit-text-stroke: 1px #d41a773d; /* Menggunakan efek outline teks dengan warna hitam */
+	-webkit-text-stroke: 1px #d41a773d;
+	/* Menggunakan efek outline teks dengan warna hitam */
 	background: linear-gradient(to top right, #fab6e7, #d41a77 80%);
 	filter: brightness(1.2);
 	-webkit-background-clip: text;
@@ -213,15 +214,19 @@ body {
 .slick-slide {
 	padding: 0 10px;
 	box-sizing: border-box;
-	transition: transform 0.3s; /* Animasi transform saat hover */
+	transition: transform 0.3s;
+	/* Animasi transform saat hover */
 	padding-top: 2em;
 	padding-bottom: 2em;
 }
 
 .slick-center {
-	transform: scale(1.1); /* Memperbesar elemen center */
-	z-index: 1; /* Membuat elemen center tumpang tindih elemen lain */
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Efek bayangan */
+	transform: scale(1.1);
+	/* Memperbesar elemen center */
+	z-index: 1;
+	/* Membuat elemen center tumpang tindih elemen lain */
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+	/* Efek bayangan */
 	border-radius: 10px;
 	z-index: 999;
 }
@@ -229,7 +234,7 @@ body {
 #Carousel img {
 	height: 300px;
 	width: 300px;
-	object-fit: cover;
+	/* object-fit: cover; */
 	border-radius: 10px;
 }
 
@@ -342,17 +347,21 @@ body {
 }
 
 .overflow-y-scroll-no-thumb {
-	scrollbar-width: none; /* Menyembunyikan thumb (gulir) */
-	-ms-overflow-style: none; /* Untuk IE/Edge */
+	scrollbar-width: none;
+	/* Menyembunyikan thumb (gulir) */
+	-ms-overflow-style: none;
+	/* Untuk IE/Edge */
 }
 
 /* Stilisasi untuk browser yang mendukung scrollbar kustom (opsional) */
 .overflow-y-scroll-no-thumb::-webkit-scrollbar {
-	width: 0; /* Lebar scrollbar (opsional) */
+	width: 0;
+	/* Lebar scrollbar (opsional) */
 }
 
 .overflow-y-scroll-no-thumb::-webkit-scrollbar-thumb {
-	background-color: transparent; /* Warna thumb (opsional) */
+	background-color: transparent;
+	/* Warna thumb (opsional) */
 }
 
 /*  */
@@ -371,19 +380,24 @@ body {
 	-webkit-backdrop-filter: blur(6.9px);
 	border: 1px solid rgba(255, 255, 255, 0.09);
 	padding: 16px;
-	scrollbar-width: thin; /* Lebar scrollbar */
-	scrollbar-color: transparent; /* Warna scrollbar (track, thumb) */
+	scrollbar-width: thin;
+	/* Lebar scrollbar */
+	scrollbar-color: transparent;
+	/* Warna scrollbar (track, thumb) */
 }
 
 /* Gaya untuk thumb (grip) scrollbar */
 #KotakPesan::-webkit-scrollbar-thumb {
-	background-color: transparent; /* Warna thumb scrollbar */
-	width: 0px; /* Lebar thumb scrollbar */
+	background-color: transparent;
+	/* Warna thumb scrollbar */
+	width: 0px;
+	/* Lebar thumb scrollbar */
 }
 
 /* Gaya untuk track scrollbar */
 #KotakPesan::-webkit-scrollbar-track {
-	background-color: transparent; /* Warna track scrollbar */
+	background-color: transparent;
+	/* Warna track scrollbar */
 }
 
 #InputChat {
@@ -398,16 +412,15 @@ body {
 
 /* Menghilangkan outline putih saat input dalam fokus */
 input:focus {
-	outline: none; /* Menghapus outline */
+	outline: none;
+	/* Menghapus outline */
 }
 
 #Footer {
-	background: linear-gradient(
-		to top,
-		rgba(218, 9, 229, 0.39) 5%,
-		rgba(218, 9, 229, 0.149) 55%,
-		rgba(0, 0, 0, 0)
-	);
+	background: linear-gradient(to top,
+			rgba(218, 9, 229, 0.39) 5%,
+			rgba(218, 9, 229, 0.149) 55%,
+			rgba(0, 0, 0, 0));
 }
 
 #FixTextPoppins {
@@ -432,22 +445,26 @@ input:focus {
 
 /* Untuk dots yang tidak aktif */
 .slick-dots li button:before {
-	color: rgba(255, 255, 255, 0.6); /* Warna putih dengan tingkat keburaman 60% */
+	color: rgba(255, 255, 255, 0.6);
+	/* Warna putih dengan tingkat keburaman 60% */
 }
 
 /* Untuk dot yang aktif */
 .slick-dots li.slick-active button:before {
-	color: white; /* Warna putih untuk dot aktif */
+	color: white;
+	/* Warna putih untuk dot aktif */
 }
 
 .sweet-alert-container {
-	z-index: 9999; /* Atur z-index sesuai kebutuhan Anda */
+	z-index: 9999;
+	/* Atur z-index sesuai kebutuhan Anda */
 }
 
 @media only screen and (min-width: 768px) {
 	.slick-slide {
 		padding: 20px;
 	}
+
 	.modal-container {
 		width: auto;
 	}
@@ -468,9 +485,12 @@ input:focus {
 		height: 50%;
 		background: linear-gradient(to top, rgba(30, 30, 30, 1) 10%, rgba(30, 30, 30, 0));
 		z-index: -1;
-		transform: scaleY(2); /* Menggunakan scaling untuk meningkatkan kualitas gradasi */
-		transform-origin: bottom; /* Titik asal scaling di bagian bawah */
-		pointer-events: none; /* Menonaktifkan interaksi dengan elemen overlay */
+		transform: scaleY(2);
+		/* Menggunakan scaling untuk meningkatkan kualitas gradasi */
+		transform-origin: bottom;
+		/* Titik asal scaling di bagian bawah */
+		pointer-events: none;
+		/* Menonaktifkan interaksi dengan elemen overlay */
 	}
 }
 

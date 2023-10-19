@@ -7,6 +7,7 @@ const Selasa = React.lazy(() => import("../components/Mapel/Selasa"));
 const Rabu = React.lazy(() => import("../components/Mapel/Rabu"));
 const Kamis = React.lazy(() => import("../components/Mapel/Kamis"));
 const Jumat = React.lazy(() => import("../components/Mapel/Jumat"));
+const Sabtu = React.lazy(() => import("../components/Mapel/Sabtu"));
 
 const Schedule = () => {
   const daysOfWeek = [
@@ -31,19 +32,21 @@ const Schedule = () => {
   // Menentukan kelompok piket berdasarkan minggu saat ini
   if (currentWeek === 1 || currentWeek === 3) {
     piketGroup = [
-      ["Nicolas", "Togi", "Paulista", "Damar"],
-      ["Farel", "Jeriko", "Wahyu", "Davina"],
-      ["Alya", "Hendri", "Hisyam", "Dafy"],
-      ["Putri", "Natar", "Wahid", "Fadliansyah"],
-      ["Cariska", "Pratiwi", "Ridho", "Farji"],
+      ["Aldo", "Alya", "Ayu", "Balqis", "Fitri", "Tia"],
+      ["Dina", "Eka", "Farhan", "Fauziyah", "Firda", "Chelsea"],
+      ["Geby", "Anggun", "Halwa", "Sultan", "Keysa", "Laura"],
+      ["Aeni", "Luna", "Marsa", "Maulidia", "Maya", "Candra", "Merys"],
+      ["Firdaus", "Ihsaina", "Niswah", "Mutia", "Nafis", "Nasywa"],
+      ["Nayla", "Muntaha", "Novelia", "Qoila", "Roro", "Sella", "Zhafira"],
     ];
   } else if (currentWeek === 2 || currentWeek === 4) {
     piketGroup = [
-      ["Annissa", "Daus", "Eki", "Attala"],
-      ["Sera", "Sultan", "Dimas", "Lista"],
-      ["Windi", "Amel", "Arif", "Fadli"],
-      ["Zaini", "Dendi", "Raka", "Bari"],
-      ["Putri", "Paulista", "Nila"],
+      ["Aldo", "Alya", "Ayu", "Balqis", "Fitri", "Tia"],
+      ["Dina", "Eka", "Farhan", "Fauziyah", "Firda", "Chelsea"],
+      ["Geby", "Anggun", "Halwa", "Sultan", "Keysa", "Laura"],
+      ["Aeni", "Luna", "Marsa", "Maulidia", "Maya", "Candra", "Merys"],
+      ["Firdaus", "Ihsaina", "Niswah", "Mutia", "Nafis", "Nasywa"],
+      ["Nayla", "Muntaha", "Novelia", "Qoila", "Roro", "Sella", "Zhafira"],
     ];
   }
 
@@ -54,6 +57,7 @@ const Schedule = () => {
     Rabu,
     Kamis,
     Jumat,
+    Sabtu,
   ];
 
   // Menampilkan komponen berdasarkan hari saat ini
