@@ -22,7 +22,7 @@ const Rabu = () => {
 				<div className="w-[50%] text-base  font-medium">Biologi</div>
 				<div className="flex justify-center items-center text-sm">12.31-13.10</div>
 			</div>
-			<div className="border-t-2 border-b-2 border-white flex justify-between py-[0.50rem] w-72 px-3" data-aos="fade-up" data-aos-duration="1000">
+			<div className="border-b-2 border-white flex justify-between py-[0.50rem] w-72 px-3" data-aos="fade-up" data-aos-duration="1000">
 				<div className="w-[50%] text-base font-medium">Pendidikan Pancasila</div>
 				<div className="flex justify-center items-center text-sm">13.11-14.30</div>
 			</div>
